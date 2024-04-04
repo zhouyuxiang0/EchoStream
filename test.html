@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据库连接工具</title>
+    <style>
+        .toolbar {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .toolbar button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            margin: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toolbar button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <button onclick="addConnection()">添加连接</button>
+        <button onclick="removeConnection()">删除连接</button>
+        <button onclick="editConnection()">编辑连接</button>
+        <!-- 可以根据需要添加更多按钮 -->
+    </div>
+
+    <h2>数据库连接列表</h2>
+    <!-- 这里可以放置数据库连接列表的表格或其他HTML元素 -->
+
+    <script>
+        function addConnection() {
+            // 这里可以添加添加连接的逻辑，比如弹出一个表单窗口
+            alert('添加新连接');
+        }
+
+        function removeConnection() {
+            // 这里可以添加删除连接的逻辑
+            alert('删除连接');
+        }
+
+        function editConnection() {
+            // 这里可以添加编辑连接的逻辑
+            alert('编辑连接');
+        }
+    </script>
+
+</body>
+
+</html>
