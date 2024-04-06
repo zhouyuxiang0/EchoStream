@@ -1,40 +1,47 @@
-body {
-    background-color: #111216;
-}
-
-#main {
-    margin: 0;
+.main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#links {
-    width: 400px;
-    text-align: left;
-    font-size: x-large;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-#links a {
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-    margin: 10px;
-    border: white 1px solid;
-    border-radius: 5px;
+    justify-content: flex-start;
+    background-color: #f1f1f1;
     padding: 10px;
 }
 
-#links a:hover {
-    background-color: #1f1f1f;
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid blue;
+    margin-right: 10px;
     cursor: pointer;
+    position: relative;
 }
 
-#header {
-    max-width: 1200px;
+.menu-button:hover {
+    background-color: #e7e7e7;
+}
+
+.menu-button .plus {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.menu-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-button span {
+    display: none;
+    /* 默认不显示文字，可以通过其他方式（如CSS伪元素）来显示 */
 }
